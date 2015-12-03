@@ -1,13 +1,14 @@
 # How to set up a local kube cluster
 
-- check the settings in `local.env` ,you may want to run more or less minions, up to you
-- run `cluster_update.sh` to clone or update your kubernetes repo
-- run `cluster_up.sh` to bring up your kube cluster
-- run `cluster_down.sh` to destroy it when you're done
+1. check the settings in `local.env` ,you may want to run more or less minions, up to you
+2. run `cluster_update.sh` to clone or update your kubernetes repo
+3. run `cluster_up.sh` to bring up your kube cluster
+4. run `kubectl config use-context vagrant`, do stuff with your local kube
+5. run `cluster_down.sh` to destroy it when you're done
 
 # Prereqs
 
-install the following:
+have the following installed:
 
 - docker
 - vagrant
